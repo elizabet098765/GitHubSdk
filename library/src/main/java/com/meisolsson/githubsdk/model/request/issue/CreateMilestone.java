@@ -37,7 +37,7 @@ public abstract class CreateMilestone implements Parcelable {
     @FormattedTime
     public abstract Date dueOn();
 
-    @NonNull
+    @Nullable
     public abstract String title();
 
     @Nullable
@@ -58,7 +58,7 @@ public abstract class CreateMilestone implements Parcelable {
     public abstract static class Builder {
         public abstract Builder dueOn(@Nullable Date dueOn);
 
-        public abstract Builder title(@NonNull String title);
+        public abstract Builder title(@Nullable String title);
 
         public abstract Builder description(@Nullable String description);
 
