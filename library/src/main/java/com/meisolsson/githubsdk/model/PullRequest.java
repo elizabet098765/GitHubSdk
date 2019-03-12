@@ -80,6 +80,9 @@ public abstract class PullRequest implements Parcelable {
     public abstract Boolean mergeable();
 
     @Nullable
+    public abstract Boolean draft();
+
+    @Nullable
     public abstract Boolean merged();
 
     @Json(name = "mergeable_state")
